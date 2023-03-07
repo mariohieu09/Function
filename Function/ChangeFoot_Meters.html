@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Feet sang Mét</p>
+<input type="number" oninput="Foot_Meters(this.value)" />
+<p>Result: <span id="F_M"></span></p>
+<p>Mét sang Feet</p>
+<input type="number" oninput="Meters_Foot(this.value)"/>
+<p>Result: <span id="M_F"></span></p>
+<script>
+  function Foot_Meters(feet){
+    met = feet/3.2808;
+    document.getElementById("F_M").innerHTML = + met;
+  }
+  function Meters_Foot(met){
+    feet = met * 3.2808;
+    document.getElementById("M_F").innerHTML = + feet;
+
+  }
+</script>
+
+</body>
+</html>
